@@ -12,13 +12,13 @@
         android:layout_height="74dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Please enter a number 1-10"
+        android:text="@string/please_enter_a_number_1_10"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/ed_input"
         android:layout_width="254dp"
         android:layout_height="48dp"
         android:layout_marginTop="76dp"
@@ -34,9 +34,19 @@
         android:layout_height="72dp"
         android:layout_marginTop="80dp"
         android:onClick="guess"
-        android:text="guessNumber"
+        android:text="@string/button_guess"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+        app:layout_constraintStart_toStartOf="@+id/ed_input"
+        app:layout_constraintTop_toBottomOf="@+id/ed_input" />
+
+    <TextView
+        android:id="@+id/tv_counter"
+        android:layout_width="30dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/counter_zero"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_number"
+        app:layout_constraintStart_toEndOf="@+id/ed_number" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
